@@ -52,7 +52,10 @@ const Modal: React.FC<ModelProps> = ({
             {/* Header */}
             <div className="flex items-center justify-between p-10 rounded-t">
               <h3 className="text-3xl font-semibold text-white">{title}</h3>
-              <button className="p-1 ml-auto border-0 text-white hover:opacity-70 transition">
+              <button
+                className="p-1 ml-auto border-0 text-white hover:opacity-70 transition"
+                onClick={handleCose}
+              >
                 <AiOutlineClose size={20} />
               </button>
             </div>
